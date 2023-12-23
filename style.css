@@ -105,7 +105,6 @@ button:hover {
     flex-wrap: wrap;
     gap: 1rem;
     list-style: none;
-    justify-content: space-between;
 }
 
 .listaCards__cardItem {
