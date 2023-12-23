@@ -6,31 +6,66 @@
     <title>Adicionar Card</title>
 </head>
 <body>
+    <!-- CONTEÚDO -->
     <main class="conteudo">
 
         <div class="container">
 
             <h1>Adicionar Card</h1>
 
+            <!-- SEÇÃO DE CRIAR CARDS -->
             <section class="secaoCriarCard">
-                <!-- 
-                    TEM QUE ADICIONAR: 
-                    - TEXTO
-                    - COR DA BORDA
-                    - COR DE FUNDO
-                    - COR DA FONTE
-                 -->
 
+                <div class="secaoCriarCard__inputs">
+
+                    <!-- CRIAÇÃO -->
+                    <div class="inputBox">
+                        <label for="tituloCard">Título do Card: </label>
+                        <input type="text" name="tituloCard" id="tituloCard">
+                    </div>
+
+                    <div class="inputBox">
+                        <p>Cor de Fundo: </p>
+                        <label for="corFundoCard">Escolha a cor de fundo</label>
+                        <input type="color" name="corFundoCard" id="corFundoCard">
+                    </div>
+
+                    <div class="inputBox">
+                        <p>Cor do Texto: </p>
+                        <label for="corTextoCard">Escolha a cor do texto</label>
+                        <input type="color" name="corTextoCard" id="corTextoCard">
+                    </div>
+
+                    <div class="inputBox">
+                        <p>Cor da Borda: </p>
+                        <label for="corBordaCard">Escolha a cor da borda</label>
+                        <input type="color" name="corBordaCard" id="corBordaCard">
+                    </div>
+
+                    <button class="btnCriar">Criar Card</button>
+
+                </div>
 
             </section>
 
+            <!-- SEÇÃO DE MOSTRAR OS CARD CRIADOS -->
             <section class="secaoMostrarCard">
 
+                <ul class="secaoMostrarCard__listaCards">
+
+                    <li class="listaCards__cardItem">
+
+                        <p>Texto</p>
+
+                    </li>
+
+                </ul>
 
             </section>
 
         </div>
 
     </main>
+
 </body>
 </html>
