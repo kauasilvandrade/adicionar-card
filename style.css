@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 97vh;
+}
+
+/* CONTEÚDO */
+.conteudo {
+    background-color: white;
+    max-width: 600px;
+    width: 100%;
+    padding: 1.8rem;
+    border-radius: 8px;
+    box-shadow: 0px 0px 18px #00000036;
+    border: 3px solid black;
+}
+
+.container {}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* SEÇÃO DE CRIAR CARDS  */
+.secaoCriarCard {
+    margin-bottom: 2rem;
+}
+
+.secaoCriarCard__inputs {
+    display: flex;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+    align-items: center;
+    justify-content: space-between;
+}   
+
+.inputBox {
+    position: relative;
+}
+
+.inputBox label:first-child { 
+    margin-bottom: 0.8rem;
+    display: block;
+    cursor: pointer;
+}
+
+.inputBox label:nth-child(n+2) {
+    border: 2px solid black;
+    padding: 0.3rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.inputBox input[type="text"] {
+    display: block;
+    padding: 0.3rem;
+    border-radius: 4px;
+    border: 2px solid black;
+}
+
+.inputBox input[type="color"] {
+    overflow: hidden;
+    visibility: hidden;
+    position: absolute;
+    right: 0.4rem;
+    height: 1rem;
+    width: 1rem;
+}
+
+.inputBox p {
+    margin-bottom: 0.8rem;
+}
+
+button {
+    margin: auto;
+    display: block;
+    padding: 0.5rem;
+    border-radius: 4px;
+    width: 8rem;
+    cursor: pointer;
+    background: transparent;
+    border: 3px solid black;
+}
+
+button:hover {
+    background-color: rgb(230, 228, 228);
+    transition: .5s;
+}
+
+/* SEÇÃO DE MOSTRAR OS CARD CRIADOS  */
+.secaoMostrarCard {}
+
+.secaoMostrarCard__listaCards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.listaCards__cardItem {
+    width: 100%;
+    max-width: 10rem;
+    display: flex;
+    height: 10rem;
+    align-items: center;
+    justify-content: center;
+}
