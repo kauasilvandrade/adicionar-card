@@ -9,13 +9,13 @@ let labelCardFundo = document.getElementById('labelCardFundo');
 let labelCardTexto = document.getElementById('labelCardTexto');
 let labelCardBorda = document.getElementById('labelCardBorda');
 
-labelCardFundo.addEventListener('change', function() {
+corFunDoCard.addEventListener('change', function() {
     labelCardFundo.style.background = `${corFunDoCard.value}`
 })
-labelCardTexto.addEventListener('change', function() {
+corTextoCard.addEventListener('change', function() {
     labelCardTexto.style.background = `${corTextoCard.value}`
 })
-labelCardBorda.addEventListener('change', function() {
+corBordaCard.addEventListener('change', function() {
     labelCardBorda.style.background = `${corBordaCard.value}`
 })
 
